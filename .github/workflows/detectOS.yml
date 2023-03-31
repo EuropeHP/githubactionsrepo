@@ -13,7 +13,7 @@ jobs:
         if: runner.os != 'Windows'
         run: echo "The operating system on the runner is not Windows, it's $RUNNER_OS."
   if-mac-else:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - name: condition 1
         if: runner.os == 'Windows'
